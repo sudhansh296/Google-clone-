@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Clone</title>
+    <style>
+        body{
+            height: 150vh;
+            background-color: rgb(80, 78, 78);
+        }
+        .header{
+            display:flex;
+            justify-content: end;
+            flex: 1;
+            
+
+        }
+        .header-img{
+            display: flex;
+            width: 300px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .flask-image{
+            width: 40px;
+            
+        } 
+        .google-app-image{
+            width: 32px;
+    
+        }
+        .sudhanshu-image{
+            width: 40px;
+            border-radius: 50%;
+
+        }
+
+        .google-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .google{
+             background-color:  rgb(40, 40, 40);
+             padding-top: 20px;
+             border-radius: 20px;
+        }
+        .input{
+            display: flex;
+            flex: 1;
+            border-radius: none;
+            height: 40px;
+            background-color: transparent;
+            border-color: white;
+            border: none;
+            
+        }
+
+        .input:focus{
+            outline: none;
+        }
+        .input::placeholder{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .search{
+            display: flex;
+            width: 25px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        .microphone{
+            width: 20px;
+        
+        }
+        .ai-mode{
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-right: 15px;
+            background-color: transparent;
+        }
+        .search-box{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: solid 1px white;
+            border-radius: 30px;
+            width: 700px;
+        }
+        .search-box-main{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .microphone-button{
+            display: flex;
+            width: 30px;
+            margin-left: 10px;
+            background-color: transparent;
+            border: none;
+        }
+        .search-bar-button{
+            display: flex;
+            width: 10px;
+            margin-left: 7px;
+            background-color: transparent;
+            border: none;
+        }
+        .ai-mode-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            margin-left: 20px;
+        }
+        .ai-mode-image{
+            width: 20px;
+        }
+        .search-bar-right{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .images-button{
+            width:112px;
+            height: 112px;
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        .middle-section{
+            display: flex;
+            padding: 2px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .middle-section-container{
+            display: block;
+
+        }
+        .images{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        
+
+        .youtube{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(68, 71, 70);
+            margin-bottom: 10px;
+            margin-left: 22px;
+                
+        }
+        .continue{
+            color: white;
+            padding-left: 20px;
+            padding-top: 10px;
+            
+        }
+
+        .details{
+            display: block;
+            height: 480px;
+            width: 800px;
+            background-color: rgb(40, 40, 40);
+            border-radius: 10px;
+        }
+        .more-details{
+            display: flex;
+            height: 70px;
+            padding-left: 15px;
+            
+        }
+        .youtube-details{
+            background-color: transparent;
+            color: white;
+            border:none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .text{
+            flex-direction: row;
+            flex: 1;
+            display:block;
+            margin-left: 20px;
+            
+        }
+        .para{
+            text-align: left;
+            font-size: 12px;
+        }
+        .details-color{
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: rgb(68, 71, 70);
+            border-radius: 10px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            
+        }
+
+        .set-image{
+            background-color: rgb(40, 40, 40);
+            padding: 7px 10px;
+            border-radius: 10px;
+        }
+        .see{
+            color: white;
+            padding-left: 25px;
+            padding-bottom: 20px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-img">
+        <p>Gmail</p>
+        <p>Images</p>
+        <img src="../images/flask.png" class="flask-image">
+        <img src="../images/application.png" class="google-app-image">
+        <img src="../images/sudhanshu.png" class="sudhanshu-image">
+        </div>
+    </div>
+    
+    <div class="google-image">
+       <div class="google"><img src="../images/download.png"></div> 
+    </div>
+
+    <div class="search-box-main" >
+        <div class="search-box">
+        <img src="../images/search (1).png"  class="search">
+         <input placeholder="Search Google or type a URL" class="input">
+
+         <div class="search-bar-right">
+            <button class="microphone-button"><img src="../images/microphone.png" class="microphone"></button>
+         
+            <button class="search-bar-button"><img src="../images/lens.png" class="microphone"></button>
+            
+         <div class="ai-mode">
+            <button class="ai-mode-button">
+                <img src="../images/search (1).png" class="ai-mode-image">
+                <p>AI MODE</p>
+            </button>
+            
+         </div>
+         </div>
+         </div>
+    </div>
+    
+    <div class="middle-section-container">
+      <div class="middle-section">
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/youtube.png" >
+                 </div>
+                  <div>
+                     <span>YouTube</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube" >
+                    <img src="../images/tc.png" class="tc">
+                 </div>
+                  <div>
+                     <span>tc</span>
+                 </div>
+            </button>
+           
+        </div> 
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube" >
+                    <img src="../images/hi-anime.png">
+                 </div>
+                  <div>
+                     <span>Hi-Anime</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/ChatGpt.png">
+                 </div>
+                  <div>
+                     <span>ChatGpt</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/hotstar.png">
+                 </div>
+                  <div>
+                     <span>JioHotstar</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/chat-gpt.png">
+                 </div>
+                  <div>
+                     <span>ChatGpt</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/kbc.png">
+                 </div>
+                  <div>
+                     <span>K.B.C</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/image.png">
+                 </div>
+                  <div>
+                     <span>Colab</span>
+                 </div>
+            </button>
+           
+        </div>
+
+        <div class="images">
+            <button class="images-button">
+                 <div class="youtube">
+                    <img src="../images/youtube.png">
+                 </div>
+                  <div>
+                     <span>YouTube</span>
+                 </div>
+            </button>
+           
+        </div>
+       </div>
+    </div>
+
+    <div class="footer">
+        <div class="details">
+            <p class="continue">Continue with these tabs</p>
+            <div class="details-color">
+                <div class="more-details">
+                    <button class="youtube-details">
+                        <div class="set-image"><img src="../images/hi-anime.png"></div>
+                       <div class="text">
+                        <P>Hi-Anime is the most popular of the anime world  and i like the most </P>
+                        <p class="para">It's best platform for watching anime &middot; v2253 &middot; You visit often
+</p>
+                       </div>
+                       
+                    </button>
+                </div>
+
+                <div class="more-details">
+                    <button class="youtube-details">
+                        <div class="set-image"><img src="../images/youtube.png"></div>
+                       <div class="text">
+                        <P>GreatStack - YouTube is one of the famous in the world </P>
+                        <p class="para">I am using youtube for learning &middot; v2253 &middot; You visit often
+</p>
+                       </div>
+                       
+                    </button>
+                </div>
+                <div class="more-details">
+                    <button class="youtube-details">
+                        <div class="set-image"><img src="../images/hotstar.png"></div>
+                       <div class="text">
+                        <P>Hotstar is one of the best OTT of india's where we can watch movie </P>
+                        <p class="para">You can watch movie here &middot; v2253 &middot; You visit often
+</p>
+                       </div>
+                       
+                    </button>
+                </div>
+                <div class="more-details">
+                    <button class="youtube-details">
+                        <div class="set-image"><img src="../images/ChatGpt.png"></div>
+                       <div class="text">
+                        <P>o is one of the best generic medicine paltform to make thing better </P>
+                        <p class="para">you can learn from here &middot; v2253 &middot; You visit often
+</p>
+                       </div>
+                       
+                    </button>
+                </div>
+                <div class="more-details">
+                    <button class="youtube-details">
+                        <div class="set-image"><img src="../images/image.png"></div>
+                       <div class="text">
+                        <P>Colab is for the python developer and used for online coading</P>
+                        <p class="para">it has pre-installed packages &middot; v2253 &middot; You visit often
+                        </p>
+                       </div>
+                       
+                    </button>
+                </div>
+                <P class="see">See More</P>
+                </div>
+        </div>
+    </div>
+   
+    
+    
+</body>
+</html>
